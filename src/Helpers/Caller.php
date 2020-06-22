@@ -14,7 +14,7 @@ class Caller
 
     public function callMethod(Operation $obj, string $method_name)
     {
-        echo "\n" . 'calling' . get_class($obj) . '@' . $method_name . ': ';
+        // echo "\n" . 'calling' . get_class($obj) . '@' . $method_name . ': ';
         try {
             return app()->call([$obj, $method_name], $obj->args);
         } catch (Exception $e) {
