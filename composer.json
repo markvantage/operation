@@ -1,0 +1,29 @@
+{
+    "name": "markvantage/operation",
+    "description": "Laravel phackage to create Operations",
+    "type": "library",
+    "require": {
+        "php": "^7.2.5"
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "Mark Minasazi",
+        "email": "compbizpro@hotmail.com"
+    }],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Markvantage\\Operation\\OperationServiceProvider"
+            ],
+            "aliases": {
+                "Operation": "Markvantage\\Operation\\Facade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Markvantage\\Operation\\": "src"
+        }
+    }
+}
